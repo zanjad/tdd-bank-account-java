@@ -8,7 +8,7 @@ public class AccountTest {
 
     @Test
 	public void initialAccount_shouldHaveZeroBalance() {
-        Account account = new Account();
+        Account account = Account.emptyAccount();
         assertThat(account.balance()).isEqualTo(0);
     }
 }
